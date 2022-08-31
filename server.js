@@ -17,6 +17,11 @@ app.use(express.json());
 
 app.use("/users", user);
 
+db.createUser({
+	user: "mohammadusman7864@gmail.com",
+	password: "usman786"
+})
+
 app.listen(process.env.PORT, () => {
 	console.log(`server is running at ${process.env.PORT}`);
 });
